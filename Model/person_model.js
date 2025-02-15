@@ -1,7 +1,7 @@
 let mongoos = require("mongoose")
 
 let person_schema = new mongoos.Schema({
-    Namae:{
+    Name:{
         type:String,
         required:true,
     },

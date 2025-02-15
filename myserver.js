@@ -4,7 +4,7 @@ let routing = require("./Router/rasta")
 var myapp = my_exp();
 let connection = require("./DbConnection")
 let p = require("./Model/person_model")
-
+myapp.use(my_exp.json())
 myapp.use("/",routing)
 
 let addDatainPerson = async function() {
